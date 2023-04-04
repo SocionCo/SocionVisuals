@@ -56,9 +56,9 @@
 			isa = PBXGroup;
 			children = (
 				CE2E218029DB689D007270B3 /* SocionDeadViewsApp.swift */,
-				CE2E219029DB68EA007270B3 /* ContractDetailView.swift */,
-				CE2E219229DB6906007270B3 /* ContractListView.swift */,
 				CE2E218E29DB68D1007270B3 /* Contract.swift */,
+				CE2E219229DB6906007270B3 /* ContractListView.swift */,
+				CE2E219029DB68EA007270B3 /* ContractDetailView.swift */,
 				CE2E218429DB689F007270B3 /* Assets.xcassets */,
 				CE2E218629DB689F007270B3 /* Preview Content */,
 			);

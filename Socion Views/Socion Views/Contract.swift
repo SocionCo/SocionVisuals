@@ -18,4 +18,5 @@ struct Contract: Hashable {
     var company = ""
     var status: Progress
     var influencer = "" // This will eventually be an influencer model
+    
 }

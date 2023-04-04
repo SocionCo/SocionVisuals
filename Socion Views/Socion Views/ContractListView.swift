@@ -14,22 +14,26 @@ struct ContractListView: View {
     var body: some View {
         NavigationStack {
             VStack {
-                Group {
-                    Text(agencyName)
-                        .frame(width: 500, height: 80)
-                        .font(.largeTitle)
-                        .fontWeight(.bold)
-                        .minimumScaleFactor(0.5)
-                        .foregroundColor(.white)
-                        .background(.green)
-                    
-                    TextField("Search contacts...", text: $searchText)
-                        .textFieldStyle(.plain)
-                        .overlay {
-                            RoundedRectangle(cornerRadius: 5)
-                                .stroke(.gray.opacity(0.5), lineWidth: 2)
-                        }
-                        .padding(.horizontal)
+                ZStack {
+                    VStack {
+                        Text(agencyName)
+                            .frame(width: 700, height: 80)
+                            .font(.largeTitle)
+                            .fontWeight(.bold)
+                            .minimumScaleFactor(0.5)
+                            .foregroundColor(.white)
+                            .background(.green)
+                        
+                        TextField("  Search contacts...", text: $searchText)
+                            .textFieldStyle(.plain)
+                            .frame(width: 370)
+                            .padding(.horizontal, 3.0)
+                            .padding(.vertical, 4.0)
+                            .overlay {
+                                RoundedRectangle(cornerRadius: 5)
+                                    .stroke(.gray.opacity(0.5), lineWidth: 2)
+                            }
+                    }
                 }
                 
                 
@@ -47,6 +51,10 @@ struct ContractListView: View {
                                 
                                 Text(contract.status.rawValue)
                                     .font(.title2)
+                                    .background {
+                                        RoundedRectangle(cornerRadius: 15)
+                                            .fill(statusColor(contract: contract))
+                                    }
                             }
                         }
                         }
@@ -57,7 +65,16 @@ struct ContractListView: View {
                 .listStyle(.plain)
             }
         }
-        
+    }
+    func statusColor(contract: Contract) -> Color {
+        switch contract.status {
+        case.notStarted:
+            return .red
+        case .inProgress:
+            return .orange
+        case .done:
+            return .green
+        }
     }
 }
 
