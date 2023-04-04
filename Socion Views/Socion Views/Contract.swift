@@ -10,11 +10,12 @@ import Foundation
 struct Contract: Hashable {
     
     enum Progress: String, CaseIterable {
-        case notStarted = "Not Started"
-        case inProgress = "In Progress"
-        case done = "Done"
+        case notStarted = " Not Started "
+        case inProgress = " In Progress "
+        case done = " Done "
     }
     
+    var agency = "" // Agency model
     var company = ""
     var status: Progress
     var influencer = "" // This will eventually be an influencer model
