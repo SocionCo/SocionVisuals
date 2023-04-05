@@ -18,6 +18,7 @@ struct Contract: Hashable {
     var agency = "" // Agency model
     var company = ""
     var status: Progress
-    var influencer = "" // This will eventually be an influencer model
+    var influencer = ""
+    var rate = 0 // Make this a double
     
 }

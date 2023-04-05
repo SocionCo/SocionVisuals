@@ -22,7 +22,7 @@ struct ContractListView: View {
                     .foregroundColor(.white)
                     .background(.green)
                 
-                TextField("  Search contacts...", text: $searchText)
+                TextField("  Search contracts...", text: $searchText)
                     .textFieldStyle(.plain)
                     .frame(width: 370)
                     .padding(.horizontal, 3.0)

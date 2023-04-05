@@ -14,6 +14,8 @@
 		CE2E219129DB68EA007270B3 /* ContractDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E219029DB68EA007270B3 /* ContractDetailView.swift */; };
 		CE2E219329DB6906007270B3 /* ContractListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E219229DB6906007270B3 /* ContractListView.swift */; };
 		CE2E21B129DCE60E007270B3 /* Influencer.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E21B029DCE60E007270B3 /* Influencer.swift */; };
+		CE2E21B329DCF304007270B3 /* InfluencerListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E21B229DCF304007270B3 /* InfluencerListView.swift */; };
+		CE2E21B529DCF4D5007270B3 /* InfluencerDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE2E21B429DCF4D5007270B3 /* InfluencerDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +27,8 @@
 		CE2E219029DB68EA007270B3 /* ContractDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractDetailView.swift; sourceTree = "<group>"; };
 		CE2E219229DB6906007270B3 /* ContractListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContractListView.swift; sourceTree = "<group>"; };
 		CE2E21B029DCE60E007270B3 /* Influencer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Influencer.swift; sourceTree = "<group>"; };
+		CE2E21B229DCF304007270B3 /* InfluencerListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerListView.swift; sourceTree = "<group>"; };
+		CE2E21B429DCF4D5007270B3 /* InfluencerDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfluencerDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -61,7 +65,9 @@
 				CE2E218E29DB68D1007270B3 /* Contract.swift */,
 				CE2E21B029DCE60E007270B3 /* Influencer.swift */,
 				CE2E219229DB6906007270B3 /* ContractListView.swift */,
+				CE2E21B229DCF304007270B3 /* InfluencerListView.swift */,
 				CE2E219029DB68EA007270B3 /* ContractDetailView.swift */,
+				CE2E21B429DCF4D5007270B3 /* InfluencerDetailView.swift */,
 				CE2E218429DB689F007270B3 /* Assets.xcassets */,
 				CE2E218629DB689F007270B3 /* Preview Content */,
 			);
@@ -146,11 +152,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CE2E21B529DCF4D5007270B3 /* InfluencerDetailView.swift in Sources */,
 				CE2E218129DB689D007270B3 /* SocionDeadViewsApp.swift in Sources */,
 				CE2E21B129DCE60E007270B3 /* Influencer.swift in Sources */,
 				CE2E218F29DB68D1007270B3 /* Contract.swift in Sources */,
 				CE2E219329DB6906007270B3 /* ContractListView.swift in Sources */,
 				CE2E219129DB68EA007270B3 /* ContractDetailView.swift in Sources */,
+				CE2E21B329DCF304007270B3 /* InfluencerListView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
